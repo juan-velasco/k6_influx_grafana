@@ -3,7 +3,7 @@
 `git clone https://gitlab.iti.upv.es/acs/acs-devops/k6_influx_grafana.git`
 
 ### Arrancar el influx y el grafana (grafana puede consumir recursos):
-Ir a la ruta donde se ha bajado el proyecto git.
+Ir a la ruta donde se ha bajado el proyecto git y ejecutar:
 
 `docker-compose up -d influxdb grafana`
 
