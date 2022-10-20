@@ -1,6 +1,4 @@
-### Descargar el repo de git:
-
-`git clone https://gitlab.iti.upv.es/acs/acs-devops/k6_influx_grafana.git`
+### Descargar el repo de git con Git Clone...
 
 ### Arrancar el influx y el grafana (grafana puede consumir recursos):
 Ir a la ruta donde se ha bajado el proyecto git y ejecutar:
