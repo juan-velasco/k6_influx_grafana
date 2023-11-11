@@ -30,7 +30,6 @@ services:
     volumes:
       - grafana_lib:/var/lib/grafana
       - ./dashboards:/var/lib/grafana_dashboards
-      #- grafana_etc:/etc/grafana
       - grafana_logs:/var/log/grafana
       - ./grafana_config/grafana-datasource.yaml:/etc/grafana/provisioning/datasources/datasource.yaml
       - ./grafana_config/grafana-dashboard.yaml:/etc/grafana/provisioning/dashboards/dashboard.yaml

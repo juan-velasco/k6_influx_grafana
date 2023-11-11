@@ -9,7 +9,7 @@ export const requests = new Counter('http_reqs');
 export default function () {
   // our HTTP request, note that we are saving the response to res, which can be accessed later
 
-  const res = http.get('http://test.k6.io');
+  const res = http.get('http://proyectosrandom.net:5000/es/blog/');
 
   sleep(1);
 
