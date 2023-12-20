@@ -1,4 +1,4 @@
-version: '3.4'
+version: '4.0'
 
 networks:
   k6:
@@ -6,7 +6,7 @@ networks:
 
 services:
   influxdb:
-    image: influxdb:1.8.5
+    image: influxdb:1.8.10
     networks:
       - k6
       - grafana
@@ -18,7 +18,7 @@ services:
     - influxdb_lib:/var/lib/influxdb
 
   grafana:
-    image: grafana/grafana:7.5.5
+    image: grafana/grafana:10.2.2
     networks:
       - grafana
     ports:
@@ -36,7 +36,7 @@ services:
       - ./grafana_config/grafana-dashboard.yaml:/etc/grafana/provisioning/dashboards/dashboard.yaml
 
   k6:
-    image: loadimpact/k6:0.32.0
+    image: grafana/k6:0.48.0
     networks:
       - k6
     ports:
