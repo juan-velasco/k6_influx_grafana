@@ -6,6 +6,7 @@ networks:
 
 services:
   influxdb:
+    restart: unless-stopped
     image: influxdb:1.8.10
     networks:
       - k6
@@ -18,6 +19,7 @@ services:
     - influxdb_lib:/var/lib/influxdb
 
   grafana:
+    restart: unless-stopped
     image: grafana/grafana:10.2.2
     networks:
       - grafana
