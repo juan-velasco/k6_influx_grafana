@@ -1,5 +1,3 @@
-version: '4.0'
-
 networks:
   k6:
   grafana:
